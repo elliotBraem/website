@@ -3,7 +3,9 @@
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    sourceType: "module",
+    ecmaVersion: 2017
   },
   env: {
     browser: true,
@@ -11,7 +13,10 @@ module.exports = {
     "es6": true,
     "node": true
   },
-  extends: "google",
+  extends: [
+    "google",
+    "plugin:vue/essential"
+  ],
   // required to lint *.vue files
   plugins: [
     'vue'
