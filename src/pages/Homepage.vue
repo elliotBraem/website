@@ -26,18 +26,27 @@ export default {
   div
     height: 100%
 
-  @media screen and (orientation:portrait)
+  .portrait,
+  .landscape
+    display: none
+
+  @media screen and (orientation:portrait) and (max-width: 426px)
+    .portrait
+      display: initial
+
     .landscape,
     .desktop
       display: none
 
-  @media screen and (orientation:landscape)
+  @media screen and (orientation:landscape) and (max-width: 830px)
+    .landscape
+      display: initial
+
     .portrait,
     .desktop
       display: none
 
 // // Small devices (landscape phones, 420px and up)
-// @media (min-width: 420px)
 
 // // Medium devices (tablets, 768px and up)
 // @media (min-width: 768px)
