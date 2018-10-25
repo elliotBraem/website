@@ -5,21 +5,21 @@
     .landscape
       BusinessCard
     .desktop
-      Homepage
+      Desktop
 
 </template>
 
 <script>
 import PortraitMode from '@/components/PortraitMode';
 import BusinessCard from '@/components/BusinessCard';
-import Homepage from '@/components/Homepage';
+import Desktop from '@/components/Desktop';
 
 
 export default {
   components: {
     PortraitMode,
     BusinessCard,
-    Homepage,
+    Desktop,
   },
 };
 </script>
