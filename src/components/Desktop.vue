@@ -3,14 +3,20 @@
     .background
       .link-layer
         #projects.position-absolute
-          a projects
+          h4
+            a(href="#") projects
         #contact.position-absolute
-          a contact
+          h4
+            a.d-block(href="#") contact
+            span.d-inline-block
+              i.fab.fa-github
+              i.fab.fa-linkedin
+              i.fab.fa-instagram
       .foreground
         .center-profile.text-center
           img(src="../assets/logo.svg" alt="")
-          h2 This is the logo
-          h2 Hi, I'm an elevator pitch
+          h2 Hi, my name is Elliot Braem and I am a currently a
+            |  senior at UW- Madison expecting to graduate 
 
 </template>
 
@@ -36,16 +42,27 @@ export default {
     top: 50%;
     transform: translate(-50%,-50%);
 
+  .center-profile
+    max-width: 50%
+    img
+      max-height: 20vmin;
+
   .link-layer
-    min-width: 60%
-    min-height: 60%
+    width: 100%
+    height: 100vh
 
   #projects
-    left: 0
-    top: 15%
+    width: 30%
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    transform: translate(-25%,-25%);
 
   #contact
-    right: 0
-    bottom: 15%
+    width: 30%
+    position: absolute
+    left: 75%
+    top: 75%
+    transform: translate(-75%,-75)
 
 </style>
