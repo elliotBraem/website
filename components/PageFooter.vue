@@ -1,6 +1,6 @@
 <template lang="pug">
-  .container
-    p.text-center <br> ©2018 Elliot Braem, All Rights Reserved.
+  b-container.text-center
+    p <br> ©2018 Elliot Braem, All Rights Reserved.
 </template>
 
 <script>

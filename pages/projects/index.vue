@@ -7,6 +7,7 @@
 import ProjectList from '~/components/projects/ProjectList'
 
 export default {
+  layout: 'page',
   components: {
     ProjectList
   }

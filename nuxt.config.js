@@ -31,7 +31,7 @@ module.exports = {
   /**
    * Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/font-awesome', ssr: false }],
 
   /**
    * Nuxt.js modules

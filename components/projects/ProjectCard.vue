@@ -18,3 +18,11 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+  .project-card
+    max-width: 800px
+
+  .project-image
+    float: left
+</style>

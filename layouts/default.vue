@@ -1,8 +1,7 @@
-<template>
-  <div>
-    <nuxt/>
-    <PageFooter/>
-  </div>
+<template <template lang="pug">
+  b-container
+    nuxt
+    PageFooter.footer.mx-auto
 </template>
 
 <script>
@@ -26,7 +25,13 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
 }
 
 *,
