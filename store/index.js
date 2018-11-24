@@ -1,10 +1,19 @@
 import Vuex from 'vuex'
-const { directories } = require('~/server/projects')
+const { directories, getMarkdown } = require('~/server/projects')
+
+const mdFiles = {}
+
+const importAll = resolve => {
+  resolve.keys().forEach(key => {
+    mdFiles[key] = resolve(key)
+  })
+}
+importAll(require.context('~/assets/projects', true, /\.md$/))
 
 const createStore = () => {
   return new Vuex.Store({
     state: () => ({
-      mdFiles: directories('./assets/projects')
+      projects: mdFiles
     })
   })
 }

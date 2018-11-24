@@ -19,11 +19,11 @@ const directories = source =>
     .filter(isDirectory) // Check that content is a directory
 
 /**
- * Return the files of type .md in source
+ * Return true if file is of type .md in source
  * @param {string}: source - file to check
  * @return {boolean} True if of type .md, else false
  */
-const getMarkdown = source => source.filter(file => file.match(/.*\.(md)/gi))
+const isMarkdown = file => file.match(/.*\.(md)/gi)
 
 /**
  * Returns the slug for the project
