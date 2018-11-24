@@ -77,9 +77,10 @@ module.exports = {
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
   markdownit: {
-    preset: 'default',
+    // preset: 'default',
     linkify: true,
-    breaks: true
+    // breaks: true,
+    injected: true
     // use: [['markdown-it-container', containerName], 'markdown-it-attrs']
   },
 

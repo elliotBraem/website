@@ -1,7 +1,24 @@
-# ASSETS
+An h1 header
+============
 
-**This directory is not required, you can delete it if you don't want to use it.**
+Paragraphs are separated by a blank line.
 
-This directory contains your un-compiled assets such as LESS, SASS, or JavaScript.
+2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+look like:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#webpacked).
+  * this one
+  * that one
+  * the other one
+
+Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.
+
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
+
+Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺

@@ -1,8 +1,7 @@
 <template>
-  <div :key="$route.params.slug">
-    <div v-html="content"/>
-  </div>
+  <div v-html="content.default"/>
 </template>
+
 
 <script>
 export default {

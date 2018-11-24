@@ -18,10 +18,9 @@
     "bootstrap-vue": "^2.0.0-beta",
     "cross-env": "^5.2.0",
     "express": "^4.16.3",
-    "nuxt": "^2.2.0"
+    "nuxt": "^2.3.2"
   },
   "devDependencies": {
-    "@nuxtjs/markdownit-loader": "^1.1.1",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^3.1.0",
