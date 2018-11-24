@@ -1,3 +1,23 @@
+---
+title: Amazarashi Music Video
+year: 2015
+owner: Sony Music Entertainment
+role: UI Design
+related:
+  - pokemon-go
+  - googleplay-game-effect
+  - laughly
+colors:
+  - "#34393d"
+  - "#263228"
+  - "#555c6f"
+  - "#797979"
+  - "#a40505"
+  - "#686868"
+description: |
+  Amazarashi is a Japanese rock band that continues to question modern society through its songs. I designed a user interface for their music video during my period at SIX, creative agency in Tokyo, Japan.
+---
+
 An h1 header
 ============
 

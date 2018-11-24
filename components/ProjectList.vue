@@ -1,7 +1,6 @@
 <template lang="pug">
   ul
     li(v-for="project in projects")
-      p Hello
   
 </template>
 
