@@ -1,14 +1,20 @@
 import Vuex from 'vuex'
 const { directories, getMarkdown } = require('~/server/projects')
 
-const mdFiles = {}
-
+/**
+ * importAll: Takes in a context and imports all files of type
+ * and saves for export
+ * @param {context} resolve: context to import all the files of type from
+ * @return {array} files: imported array of files of type
+ */
 const importAll = resolve => {
+  var files = {}
   resolve.keys().forEach(key => {
-    mdFiles[key] = resolve(key)
+    files[key] = resolve(key)
   })
+  return files
 }
-importAll(require.context('~/assets/projects', true, /\.md$/))
+const mdFiles = importAll(require.context('~/assets/projects', true, /\.md$/))
 
 const createStore = () => {
   return new Vuex.Store({
