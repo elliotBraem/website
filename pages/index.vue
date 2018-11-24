@@ -14,14 +14,13 @@
               i.fab.fa-instagram
       .foreground
         .center-profile.text-center
-          img(src="../assets/logo.svg" alt="")
+          img(src="logo.svg" alt="")
           h2 Hi, my name is Elliot Braem and I am a currently
             |  writing an Elevator Pitch to put here
 </template>
 
 <script>
-export default {
-};
+export default {}
 </script>
 
 <style lang="stylus" scoped>
