@@ -1,5 +1,4 @@
 import Vuex from 'vuex'
-const { directories, getMarkdown } = require('~/server/projects')
 
 /**
  * importAll: Takes in a context and imports all files of type
