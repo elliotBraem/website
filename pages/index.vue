@@ -4,7 +4,7 @@
       .link-layer
         #projects.position-absolute
           h4
-            router-link(to="/projects") projects
+            nuxt-link(to="/projects") projects
         #contact.position-absolute
           h4
             a.d-block(href="#") contact
