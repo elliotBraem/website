@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import ProjectList from '~/components/ProjectList'
+import ProjectList from '~/components/projects/ProjectList'
 
 export default {
   components: {
