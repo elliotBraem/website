@@ -12,17 +12,18 @@
       .foreground
         .center-profile.text-center
           img(src="logo.svg" alt="")
-          h2 Hi, my name is Elliot Braem and I am a currently
-            |  writing an Elevator Pitch to put here
+          ElevatorPitch.mt-6
 </template>
 
 <script>
 import ContactList from '~/components/ContactList'
+import ElevatorPitch from '~/components/ElevatorPitch'
 
 export default {
   layout: 'default',
   components: {
-    ContactList
+    ContactList,
+    ElevatorPitch
   }
 }
 </script>
@@ -47,8 +48,6 @@ export default {
     max-width: 50%
     img
       max-height: 20vmin
-    h2
-      font-size: 3vh
 
   .link-layer
     width: 100%
