@@ -1,6 +1,6 @@
 <template lang="pug">
   b-container.wrapper
-    b-navbar(fixed="top" variant="faded" type="light")
+    b-navbar(variant="faded" type="light")
       b-navbar-brand(href="/")
         b-img.logo(src="logo.svg")
       ContactList
@@ -23,5 +23,13 @@ export default {
     min-width: 4rem
 
   .wrapper
-    min-height: 5rem
+    min-height: 10rem
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px)
+    .navbar
+      position: fixed;
+      top: 0;
+      width: 100%;
+
 </style>

@@ -2,7 +2,7 @@
   b-container
     b-row.justify-content-center(v-for="project in projects" v-bind:key="project.id")
       b-col
-        ProjectCard(v-bind:project="project")
+        ProjectCard.mb-3(v-bind:project="project")
 </template>
 
 <script>
@@ -21,4 +21,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
 </style>
