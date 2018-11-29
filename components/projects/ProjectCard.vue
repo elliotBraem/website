@@ -7,7 +7,7 @@
       b-collapse.content(v-bind:id="'project-details-' + project.attributes.id")
         div.pl-3
           p.description {{project.attributes.description}}
-          //- router-link(:to="{ name: '/projects', params: { slug: project.attributes.id } }" project="project") Read more
+          nuxt-link(:to="'/projects/'+project.attributes.id" v-bind:content="project") Read more
           //- div(v-html="project.html")
 </template>
 

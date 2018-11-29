@@ -1,17 +1,12 @@
-<template>
-  <div>
-    <h1>{{ content.attributes.title }}</h1>
-    <h1>{{ content.attributes.year }} </h1>
-    <p> {{ content.attributes.description }} </p>
-    <div v-html="content.html"/>
-  </div>
+<template <template lang="pug">
+    div(v-html="content.html")
 </template>
 
 
 <script>
 export default {
   props: {
-    project: {
+    content: {
       type: Object,
       required: true
     }
