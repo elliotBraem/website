@@ -14,11 +14,6 @@ export default {
   components: {
     ProjectCard
   },
-  data() {
-    return {
-      numberOfColumns: 1
-    }
-  },
   computed: {
     projects() {
       return this.$store.state.projects
@@ -46,7 +41,7 @@ export default {
 
   .project-list
     display: grid
-    grid-gap: 1em
+    grid-gap: 3em 1em
     justify-items: center;
 
 </style>
