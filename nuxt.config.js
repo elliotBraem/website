@@ -1,5 +1,13 @@
 const pkg = require('./package')
 const { directories, getSlugs } = require('./server/projects')
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/<repository-name>/'
+        }
+      }
+    : {}
 // const md = require('markdown-it')()
 
 module.exports = {
@@ -62,7 +70,7 @@ module.exports = {
   //   injected: true
   //   // use: [['markdown-it-container', containerName], 'markdown-it-attrs']
   // },
-
+  routerBase,
   /**
    * Generate configuration
    * Creates routes for project files
