@@ -3,10 +3,10 @@
     .link-layer
       #projects.position-absolute
         h4
-          nuxt-link(to="/projects") projects
+          nuxt-link(to="/projects").link projects
       #contact.position-absolute
         h4
-          a.d-block(href="#") contact
+          a.d-block(href="#").link contact
           ContactList
     .foreground
       .center-profile.text-center
@@ -51,6 +51,33 @@ export default {
     max-width: 50%
     img
       max-height: 20vmin
+
+  // .link
+  //   -webkit-transition: transform 0.2s;
+  //   transition: transform 0.2s;
+
+  // .link::before
+  //   position: absolute;
+  //   top: 0;
+  //   left: -10px;
+  //   z-index: -1;
+  //   box-sizing: content-box;
+  //   padding: 0 10px;
+  //   width: 100%;
+  //   height: 100%;
+  //   border-radius: 5px;
+  //   background-color: #F5F5F5;
+  //   content: '';
+  //   opacity: 0;
+  //   -webkit-transition: transform 0.4s, opacity 0.3s;
+  //   transition: transform 0.4s, opacity 0.3s;
+  //   -webkit-transform: scale(0);
+  //   transform: scale(0);
+
+  // .link:hover::before
+  //   opacity: 1;
+  //   -webkit-transform: scale(1);
+  //   transform: scale(1);
 
   #projects
     width: 30%
