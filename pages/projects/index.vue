@@ -4,9 +4,10 @@
 </template>
 
 <script>
-import ProjectList from '~/components/ProjectList'
+import ProjectList from '~/components/projects/ProjectList'
 
 export default {
+  layout: 'page',
   components: {
     ProjectList
   }
@@ -14,4 +15,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  .wrapper
+    width: 100%
 </style>

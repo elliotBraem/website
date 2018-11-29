@@ -1,22 +1,25 @@
 <template lang="pug">
   div
+    PageHeader
     nuxt
     PageFooter
 </template>
 
 <script>
 import PageFooter from '~/components/PageFooter'
+import PageHeader from '~/components/PageHeader'
 
 export default {
   components: {
-    PageFooter
+    PageFooter,
+    PageHeader
   }
 }
 </script>
 
 
 <style lang="stylus" scoped>
-html
+html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -25,14 +28,19 @@ html
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
 
-body
+body {
   background-color: #D3D3D3
+}
 
 *,
 *:before,
-*:after
+*:after {
   box-sizing: border-box;
   margin: 0;
+}
+
 
 </style>

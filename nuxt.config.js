@@ -1,5 +1,6 @@
 const pkg = require('./package')
 const { directories, getSlugs } = require('./server/projects')
+// const md = require('markdown-it')()
 
 module.exports = {
   mode: 'universal',
@@ -30,27 +31,37 @@ module.exports = {
   /**
    * Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/font-awesome', ssr: false }],
 
   /**
    * Nuxt.js modules
    */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/markdownit
-    '@nuxtjs/markdownit',
+    // '@nuxtjs/markdownit',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    // Doc: https://github.com/vanhoofmaarten/nuxt-mq
+    'nuxt-mq'
   ],
+  'mq': {
+    defaultBreakpoint: 'default',
+    breakpoints: {
+      sm: 450,
+      md: 1250,
+      lg: Infinity,
+    }
+  }
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
-  markdownit: {
-    // preset: 'default',
-    linkify: true,
-    // breaks: true,
-    injected: true
-    // use: [['markdown-it-container', containerName], 'markdown-it-attrs']
-  },
+  // markdownit: {
+  //   // preset: 'default',
+  //   linkify: true,
+  //   // breaks: true,
+  //   injected: true
+  //   // use: [['markdown-it-container', containerName], 'markdown-it-attrs']
+  // },
 
   /**
    * Generate configuration
@@ -83,6 +94,15 @@ module.exports = {
       config.node = {
         fs: 'empty'
       }
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader'
+        // options: {
+        //   markdown: body => {
+        //     return md.render(body)
+        //   }
+        // }
+      })
     }
   }
 }
