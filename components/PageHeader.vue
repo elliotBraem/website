@@ -23,12 +23,13 @@ export default {
 
   .wrapper
     min-height: 10rem
-
-  /* Medium Devices, Desktops */
-  @media only screen and (min-width : 992px)
-    .navbar
-      position: fixed;
-      top: 0;
-      width: 100%;
+    max-width: 1024px
+    margin: auto
+  // /* Medium Devices, Desktops */
+  // @media only screen and (min-width : 992px)
+  //   .navbar
+  //     position: fixed;
+  //     top: 0;
+  //     width: 100%;
 
 </style>

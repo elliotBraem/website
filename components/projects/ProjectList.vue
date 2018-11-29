@@ -2,7 +2,7 @@
   div.wrapper
     div
         ul.project-list(:style="gridStyle")
-          li(v-for="project in projects" v-bind:key="project.id")
+          li.project-item(v-for="project in projects" v-bind:key="project.id")
             b-container.fluid
             ProjectCard.project(v-bind:project="project")
 </template>
@@ -36,11 +36,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  .wrapper
+    max-width: 1024px
+    margin: auto
+
   ul
     list-style-type: none;
+    padding-left: 0px;
 
   .project-list
     display: grid
-    grid-gap: 3em
+    grid-gap: 1em
+    justify-items: center;
 
 </style>

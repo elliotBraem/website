@@ -1,11 +1,12 @@
 <template lang="pug">
-  div.project-card(v-b-toggle="'project-details-' + project.attributes.id")
-    b-img.project-image(v-bind:src="project.attributes.img" fluid)
-    h3.title {{project.attributes.title}}
-    p.description {{project.attributes.description}}
-    b-collapse(v-bind:id="'project-details-' + project.attributes.id")
-      b-card
-        div(v-html="project.html")
+  b-container.fluid
+    div.project-card(v-b-toggle="'project-details-' + project.attributes.id")
+      b-img.project-image(v-bind:src="project.attributes.img" fluid).mx-auto
+      h3.title {{project.attributes.title}}
+      //p.description {{project.attributes.description}}
+      b-collapse.content(v-bind:id="'project-details-' + project.attributes.id")
+        b-card
+          div(v-html="project.html")
 </template>
 
 <script>
@@ -29,7 +30,8 @@ export default {
   //   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 
   .project-card
-    max-width: 450px
+    max-width:400px
+    // max-height: 300px
   
   /* Small Devices, Tablets */
   @media only screen and (min-width : 768px)
