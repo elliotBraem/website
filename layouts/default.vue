@@ -15,7 +15,7 @@ export default {
 </script>
 
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 html
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -25,9 +25,30 @@ html
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 
 body
   background-color: #D3D3D3
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+  color: #1F305E
+
+a
+  color: #306BAC
+  -webkit-transition: color .4s;
+  transition: color .4s;
+
+a:hover
+  color: #1F305E;
+  -webkit-transition: color .9s;
+  transition: color .9s;
+  text-decoration: none;
 
 *,
 *:before,

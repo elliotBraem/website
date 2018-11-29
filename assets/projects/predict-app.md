@@ -1,5 +1,6 @@
 ---
 id: predict-app
+url: https://github.com/HarrisJT/predict
 title: Predict App
 img: https://via.placeholder.com/400x270
 year: 2018

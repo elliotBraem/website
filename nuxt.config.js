@@ -44,14 +44,14 @@ module.exports = {
     // Doc: https://github.com/vanhoofmaarten/nuxt-mq
     'nuxt-mq'
   ],
-  'mq': {
+  mq: {
     defaultBreakpoint: 'default',
     breakpoints: {
       sm: 450,
       md: 1250,
-      lg: Infinity,
+      lg: Infinity
     }
-  }
+  },
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it

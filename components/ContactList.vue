@@ -1,20 +1,20 @@
 <template lang="pug">
   span.d-inline-block
     no-ssr
-      a(href="https://github.com/elliotBraem")
+      a(href="https://github.com/elliotBraem" target="_blank")
         font-awesome-icon.mr-2(:icon="['fab', 'github']")
     no-ssr
-      a(href="https://www.linkedin.com/in/elliot-braem-91165a112/")
-        font-awesome-icon.mr-2(:icon="['fab', 'linkedin']")
+      a(href="https://www.linkedin.com/in/elliot-braem-91165a112/" target="_blank")
+        font-awesome-icon.mr-2(:icon="['fab', 'linkedin']" target="_blank")
     no-ssr
-      a(href="https://www.facebook.com/elliot.braem")
-        font-awesome-icon.mr-2(:icon="['fab', 'facebook']")
+      a(href="https://www.facebook.com/elliot.braem" target="_blank")
+        font-awesome-icon.mr-2(:icon="['fab', 'facebook']" target="_blank")
     no-ssr
       a(href="https://www.instagram.com/efizzysnaps/")
-        font-awesome-icon.mr-2(:icon="['fab', 'instagram']")
+        font-awesome-icon.mr-2(:icon="['fab', 'instagram']" target="_blank")
     no-ssr
       a(href="https://twitter.com/EFizzySnaps")
-        font-awesome-icon.mr-2(:icon="['fab', 'twitter']")
+        font-awesome-icon.mr-2(:icon="['fab', 'twitter']" target="_blank")
 </template>
 
 <script>

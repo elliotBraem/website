@@ -5,9 +5,9 @@
       h3.title.pl-3 {{project.attributes.title}}
       //p.description {{project.attributes.description}}
       b-collapse.content(v-bind:id="'project-details-' + project.attributes.id")
-        div.pl-3
-          p.description {{project.attributes.description}}
-          nuxt-link(:to="'/projects/'+project.attributes.id" v-bind:content="project") Read more
+        div.pl-3.pb-3
+          h6.description {{project.attributes.description}}
+          a(:href="project.attributes.url" target="_blank") Check it out on Github
           //- div(v-html="project.html")
 </template>
 
@@ -26,6 +26,7 @@ export default {
   .project-card
     max-width:400px
     border-radius: 5px
+    background-color: 	#F5F5F5
 
   .title
     text-align: left
