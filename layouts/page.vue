@@ -1,9 +1,8 @@
-<template>
-  <div>
-    <PageHeader/>
-    <nuxt/>
-    <PageFooter/>
-  </div>
+<template lang="pug">
+  div
+    PageHeader
+    nuxt
+    PageFooter
 </template>
 
 <script>
@@ -30,6 +29,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #D3D3D3
 }
 
 *,

@@ -1,10 +1,9 @@
 <template lang="pug">
-  b-container.wrapper
+  div.wrapper
     b-navbar(variant="faded" type="light")
       b-navbar-brand(href="/")
         b-img.logo(src="logo.svg")
       ContactList
-
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 ---
 id: peekaboo-website
 title: Peek-A-Boo Website
-img: https://via.placeholder.com/150x200
+img: https://via.placeholder.com/350x230
 year: 2018
 description: |
   Peek-A-Boo Pediatric Therapy LLC provides exceptional occupational therapy services in the Denver, CO area.

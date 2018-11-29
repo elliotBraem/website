@@ -1,8 +1,10 @@
 <template lang="pug">
-  b-container
-    b-row.justify-content-center(v-for="project in projects" v-bind:key="project.id")
-      b-col
-        ProjectCard.mb-3(v-bind:project="project")
+  div.wrapper
+    div
+        ul.project-list(:style="gridStyle")
+          li(v-for="project in projects" v-bind:key="project.id")
+            b-container.fluid
+            ProjectCard.project(v-bind:project="project")
 </template>
 
 <script>
@@ -12,14 +14,33 @@ export default {
   components: {
     ProjectCard
   },
+  data() {
+    return {
+      numberOfColumns: 1
+    }
+  },
   computed: {
     projects() {
       return this.$store.state.projects
+    },
+    gridStyle() {
+      return {
+        gridTemplateColumns:
+          this.$mq === 'sm'
+            ? `repeat(1, minmax(100px, 1fr))`
+            : `repeat(2, minmax(100px, 1fr))`
+      }
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+  ul
+    list-style-type: none;
+
+  .project-list
+    display: grid
+    grid-gap: 3em
 
 </style>

@@ -40,8 +40,18 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/markdownit
     // '@nuxtjs/markdownit',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    // Doc: https://github.com/vanhoofmaarten/nuxt-mq
+    'nuxt-mq'
   ],
+  'mq': {
+    defaultBreakpoint: 'default',
+    breakpoints: {
+      sm: 450,
+      md: 1250,
+      lg: Infinity,
+    }
+  }
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it

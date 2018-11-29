@@ -1,18 +1,17 @@
 <template lang="pug">
-  div
-    .background
-      .link-layer
-        #projects.position-absolute
-          h4
-            nuxt-link(to="/projects") projects
-        #contact.position-absolute
-          h4
-            a.d-block(href="#") contact
-            ContactList
-      .foreground
-        .center-profile.text-center
-          img(src="logo.svg" alt="")
-          ElevatorPitch.mt-6
+  .background
+    .link-layer
+      #projects.position-absolute
+        h4
+          nuxt-link(to="/projects") projects
+      #contact.position-absolute
+        h4
+          a.d-block(href="#") contact
+          ContactList
+    .foreground
+      .center-profile.text-center
+        img.logo(src="logo.svg" alt="")
+        ElevatorPitch
 </template>
 
 <script>
@@ -29,13 +28,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  // .wrapper
-  //   width: 100%
-  //   // height: 100vh
+  .background
+    width: 100%
+    height: 100vh
 
   .background
   .foreground
     margin 0 auto
+
+  .link-layer
+    width: 100%
+    height: 100vh
 
   .center-profile
   .link-layer
@@ -48,10 +51,6 @@ export default {
     max-width: 50%
     img
       max-height: 20vmin
-
-  .link-layer
-    width: 100%
-    height: 100vh
 
   #projects
     width: 30%
