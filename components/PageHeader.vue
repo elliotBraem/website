@@ -3,7 +3,7 @@
     b-navbar(variant="faded" type="light")
       b-navbar-brand
         nuxt-link(to="/")
-          b-img.logo(src="/website/logo.svg")
+          b-img.logo(src="/logo.svg")
       h4
         ContactList.contact-list
 </template>

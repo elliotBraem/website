@@ -14,7 +14,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/website/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /**
@@ -49,9 +49,9 @@ module.exports = {
       lg: Infinity
     }
   },
-  router: {
-    base: '/website/'
-  },
+  // router: {
+  //   base: '/website/'
+  // },
   /**
    * Generate configuration
    * Creates routes for project files
