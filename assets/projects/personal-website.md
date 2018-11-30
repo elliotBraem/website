@@ -2,7 +2,7 @@
 id: braeme
 url: https://github.com/elliotBraem/website
 title: brae.me
-img: /braeme.svg
+img: /website/braeme.svg
 year: 2018
 color: F5F5F5
 description: |

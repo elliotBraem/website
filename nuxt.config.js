@@ -1,13 +1,5 @@
 const pkg = require('./package')
 const { directories, getSlugs } = require('./server/projects')
-// const routerBase =
-//   process.env.DEPLOY_ENV === 'GH_PAGES'
-//     ? {
-//         router: {
-//           base: '/website/'
-//         }
-//       }
-//     : {}
 
 module.exports = {
   mode: 'universal',

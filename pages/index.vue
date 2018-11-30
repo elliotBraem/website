@@ -3,14 +3,14 @@
     .link-layer
       #projects.position-absolute
         h4
-          nuxt-link(to="./projects").link projects
+          nuxt-link(to="/projects").link projects
       #contact.position-absolute
         h4
           .d-block.link contact
           ContactList
     .foreground
       .center-profile.text-center
-        img.logo(src="logo.svg" alt="")
+        img.logo(src="/logo.svg" alt="")
         ElevatorPitch
 </template>
 

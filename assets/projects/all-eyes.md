@@ -2,7 +2,7 @@
 id: all-eyes
 url: https://github.com/elliotBraem/all-eyes
 title: All Eyes
-img: /all-eyes.png
+img: /website/all-eyes.png
 year: 2018
 color: ffbe3d
 description: |

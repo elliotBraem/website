@@ -2,7 +2,7 @@
 id: psychic
 url: https://github.com/HarrisJT/predict
 title: Psychic
-img: /psychic.svg
+img: /website/psychic.svg
 year: 2018
 color: FFD9DA
 description: |
