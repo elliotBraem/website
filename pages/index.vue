@@ -10,7 +10,7 @@
           ContactList
     .foreground
       .center-profile.text-center
-        img.logo(src="/logo.svg" alt="")
+        img.logo(src="/website/logo.svg" alt="")
         ElevatorPitch
 </template>
 
