@@ -3,7 +3,6 @@
     div.project-card(v-b-toggle="'project-details-' + project.attributes.id" :style="BGcolor")
       b-img.project-image(v-bind:src="project.attributes.img" fluid).mx-auto
       h3.title.pl-3 {{project.attributes.title}}
-      //p.description {{project.attributes.description}}
       b-collapse(v-bind:id="'project-details-' + project.attributes.id")
         div.content.pl-3.pr-3
           h6.description {{project.attributes.description}}

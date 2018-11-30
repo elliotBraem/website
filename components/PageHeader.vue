@@ -1,8 +1,9 @@
 <template lang="pug">
   div.wrapper
     b-navbar(variant="faded" type="light")
-      b-navbar-brand(href="/")
-        b-img.logo(src="logo.svg")
+      b-navbar-brand
+        nuxt-link(to="/")
+          b-img.logo(src="/logo.svg")
       h4
         ContactList.contact-list
 </template>
