@@ -1,13 +1,13 @@
 const pkg = require('./package')
 const { directories, getSlugs } = require('./server/projects')
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/website/'
-        }
-      }
-    : {}
+// const routerBase =
+//   process.env.DEPLOY_ENV === 'GH_PAGES'
+//     ? {
+//         router: {
+//           base: '/website/'
+//         }
+//       }
+//     : {}
 
 module.exports = {
   mode: 'universal',
@@ -57,7 +57,9 @@ module.exports = {
       lg: Infinity
     }
   },
-  routerBase,
+  router: {
+    base: '/website/'
+  },
   /**
    * Generate configuration
    * Creates routes for project files
