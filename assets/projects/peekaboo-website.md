@@ -6,9 +6,7 @@ img: /peekaboo-website.svg
 year: 2018
 color: fff
 description: |
-  Peek-A-Boo Pediatric Therapy LLC provides exceptional occupational therapy services in the Denver, CO area.
-  I designed, developed, and deployed a new company website to better represent the company’s mission and provide 
-  a significantly better user experience.
+  A website I designed, developed, and deployed for Peek-A-Boo Pediatric Therapy to better represent the company’s mission and provide a significantly better user experience.
 ---
 
 About the Website

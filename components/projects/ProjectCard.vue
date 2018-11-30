@@ -5,7 +5,7 @@
       h3.title.pl-3 {{project.attributes.title}}
       //p.description {{project.attributes.description}}
       b-collapse(v-bind:id="'project-details-' + project.attributes.id")
-        div.content.pl-3
+        div.content.pl-3.pr-3
           h6.description {{project.attributes.description}}
           h4
             a.github(:href="project.attributes.url" target="_blank")

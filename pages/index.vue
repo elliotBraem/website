@@ -6,7 +6,7 @@
           nuxt-link(to="/projects" append).link projects
       #contact.position-absolute
         h4
-          a.d-block(href="#").link contact
+          .d-block.link contact
           ContactList
     .foreground
       .center-profile.text-center
@@ -92,6 +92,8 @@ export default {
     left: 70%
     top: 80%
     transform: translate(-85%,-70)
+    .link
+      color: #306BAC
 
   @media screen and (min-width: 426px)
     #projects
