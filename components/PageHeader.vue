@@ -3,7 +3,8 @@
     b-navbar(variant="faded" type="light")
       b-navbar-brand(href="/")
         b-img.logo(src="logo.svg")
-      ContactList
+      h4
+        ContactList.contact-list
 </template>
 
 <script>
@@ -25,6 +26,7 @@ export default {
     min-height: 10rem
     max-width: 1024px
     margin: auto
+
   // /* Medium Devices, Desktops */
   // @media only screen and (min-width : 992px)
   //   .navbar

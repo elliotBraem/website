@@ -4,10 +4,12 @@
       b-img.project-image(v-bind:src="project.attributes.img" fluid).mx-auto
       h3.title.pl-3 {{project.attributes.title}}
       //p.description {{project.attributes.description}}
-      b-collapse.content(v-bind:id="'project-details-' + project.attributes.id")
-        div.pl-3.pb-3
+      b-collapse(v-bind:id="'project-details-' + project.attributes.id")
+        div.content.pl-3
           h6.description {{project.attributes.description}}
-          a(:href="project.attributes.url" target="_blank") Check it out on Github!
+          h4
+            a.github(:href="project.attributes.url" target="_blank")
+              font-awesome-icon.mr-2(:icon="['fab', 'github']")
           //- div(v-html="project.html")
 </template>
 
@@ -24,20 +26,34 @@ export default {
 
 <style lang="stylus" scoped>
   .project-card
+    position: relative
     max-width:400px
     border-radius: 5px
     background-color: 	#F5F5F5
 
   .title
-    text-align: left
+    position: absolute
+    bottom: 0
 
   .description
     font-weight: lighter
-  
+
+  .project-image
+    width: 400px
+    height: 270px
+
+  .content
+    position: relative
+    padding-bottom: 2.5rem
+
+  .github
+    position: absolute
+    bottom: 0.5rem
+    right: 0.5rem
+
   /* Small Devices, Tablets */
   @media only screen and (min-width : 768px)
     .project-card
-      position: relative;
       display: inline-block;
       box-shadow: 0 1px 2px rgba(0,0,0,0.1);
       -webkit-transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
