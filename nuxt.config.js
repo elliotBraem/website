@@ -1,14 +1,13 @@
 const pkg = require('./package')
 const { directories, getSlugs } = require('./server/projects')
-// const routerBase =
-//   process.env.DEPLOY_ENV === 'GH_PAGES'
-//     ? {
-//         router: {
-//           base: '/website/'
-//         }
-//       }
-//     : {}
-// const md = require('markdown-it')()
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/website/'
+        }
+      }
+    : {}
 
 module.exports = {
   mode: 'universal',
@@ -45,8 +44,6 @@ module.exports = {
    * Nuxt.js modules
    */
   modules: [
-    // Doc: https://github.com/nuxt-community/modules/tree/master/packages/markdownit
-    // '@nuxtjs/markdownit',
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     // Doc: https://github.com/vanhoofmaarten/nuxt-mq
@@ -60,16 +57,7 @@ module.exports = {
       lg: Infinity
     }
   },
-
-  // [optional] markdownit options
-  // See https://github.com/markdown-it/markdown-it
-  // markdownit: {
-  //   // preset: 'default',
-  //   linkify: true,
-  //   // breaks: true,
-  //   injected: true
-  //   // use: [['markdown-it-container', containerName], 'markdown-it-attrs']
-  // },
+  routerBase,
   /**
    * Generate configuration
    * Creates routes for project files

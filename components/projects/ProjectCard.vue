@@ -7,7 +7,7 @@
       b-collapse.content(v-bind:id="'project-details-' + project.attributes.id")
         div.pl-3.pb-3
           h6.description {{project.attributes.description}}
-          a(:href="project.attributes.url" target="_blank") Check it out on Github
+          a(:href="project.attributes.url" target="_blank") Check it out on Github!
           //- div(v-html="project.html")
 </template>
 
