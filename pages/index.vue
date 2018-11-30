@@ -3,7 +3,7 @@
     .link-layer
       #projects.position-absolute
         h4
-          nuxt-link(to="/projects").link projects
+          nuxt-link(to="/projects" append).link projects
       #contact.position-absolute
         h4
           a.d-block(href="#").link contact
