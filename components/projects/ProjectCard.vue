@@ -1,6 +1,6 @@
 <template lang="pug">
   b-container.fluid
-    div.project-card(v-b-toggle="'project-details-' + project.attributes.id")
+    div.project-card(v-b-toggle="'project-details-' + project.attributes.id" :style="BGcolor")
       b-img.project-image(v-bind:src="project.attributes.img" fluid).mx-auto
       h3.title.pl-3 {{project.attributes.title}}
       //p.description {{project.attributes.description}}
@@ -20,6 +20,13 @@ export default {
       type: Object,
       required: true
     }
+  },
+  computed: {
+    BGcolor() {
+      return {
+        backgroundColor: '#' + this.project.attributes.color
+      }
+    }
   }
 }
 </script>
@@ -29,7 +36,6 @@ export default {
     position: relative
     max-width:400px
     border-radius: 5px
-    background-color: 	#F5F5F5
 
   .title
     position: absolute
