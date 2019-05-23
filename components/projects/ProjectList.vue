@@ -16,7 +16,10 @@ export default {
   },
   computed: {
     projects() {
-      return this.$store.state.projects
+      var projects = this.$store.state.projects
+      return Object.values(projects).sort(function(a, b) {
+        return b.attributes.year - a.attributes.year
+      })
     },
     gridStyle() {
       return {

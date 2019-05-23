@@ -7,7 +7,7 @@
       a(href="https://www.linkedin.com/in/elliot-braem-91165a112/" target="_blank")
         font-awesome-icon.mr-2(:icon="['fab', 'linkedin']" target="_blank")
     no-ssr
-      a(href="https://www.facebook.com/elliot.braem" target="_blank")
+      a(href="https://www.facebook.com/profile.php?id=100001352883257" target="_blank")
         font-awesome-icon.mr-2(:icon="['fab', 'facebook']" target="_blank")
     no-ssr
       a(href="https://www.instagram.com/efizzysnaps/")

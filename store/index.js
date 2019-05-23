@@ -1,5 +1,3 @@
-import Vuex from 'vuex'
-
 /**
  * importAll: Takes in a context and imports all files of type
  * and saves for export
@@ -15,12 +13,6 @@ const importAll = resolve => {
 }
 const mdFiles = importAll(require.context('~/assets/projects', true, /\.md$/))
 
-const createStore = () => {
-  return new Vuex.Store({
-    state: () => ({
-      projects: mdFiles
-    })
-  })
-}
-
-export default createStore
+export const state = () => ({
+  projects: mdFiles
+})
