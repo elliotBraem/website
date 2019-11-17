@@ -17,7 +17,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
     "@fortawesome/vue-fontawesome": "^0.1.6",
-    "@nuxtjs/markdownit": "^1.2.4",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.20",
     "cross-env": "^5.2.0",
@@ -34,11 +33,15 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-vue": "^4.0.0",
+    "eslint-utils": ">=1.4.1",
     "frontmatter-markdown-loader": "^1.6.0",
     "nodemon": "^1.19.0",
     "prettier": "1.14.3",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "lodash": ">=4.17.13",
+    "mixin-deep": ">=1.3.2",
+    "set-value": ">=2.0.1"
   }
 }
