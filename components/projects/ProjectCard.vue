@@ -13,7 +13,8 @@
         b-col
           h3 {{project.attributes.title}}
         b-col
-          Icon.github(:type="'github'" :href='project.attributes.url')
+          h3
+            Icon.github(:type="'github'" :href='project.attributes.url')
 </template>
 
 <script>
