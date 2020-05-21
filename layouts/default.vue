@@ -14,11 +14,10 @@ export default {
 }
 </script>
 
-
-<style lang="stylus">
-html
-  font-family: 'Source Sans Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
-    'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+<style>
+html {
+  font-family: 'Source Sans Pro', '-apple-system', 'BlinkMacSystemFont',
+    'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -26,9 +25,11 @@ html
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
 
-body
-  background-color: #D3D3D3
+body {
+  background-color: #ffffff;
+}
 
 h1,
 h2,
@@ -36,24 +37,27 @@ h3,
 h4,
 h5,
 h6,
-p
-  color: #1F305E
+p {
+  color: #1f305e;
+}
 
-a
-  color: #306BAC
-  -webkit-transition: color .4s;
-  transition: color .4s;
+a {
+  color: #306bac;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
 
-a:hover
-  color: #1F305E;
-  -webkit-transition: color .9s;
-  transition: color .9s;
+a:hover {
+  color: #1f305e;
+  -webkit-transition: color 0.9s;
+  transition: color 0.9s;
   text-decoration: none;
+}
 
 *,
 *:before,
-*:after
+*:after {
   box-sizing: border-box;
   margin: 0;
-
+}
 </style>
