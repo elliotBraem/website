@@ -1,11 +1,16 @@
 <template lang="pug">
   div.wrapper
-    p.text-center ©2018 Elliot Braem, All Rights Reserved.
+    p.text-center ©{{currentYear}} Elliot Braem, All Rights Reserved.
 </template>
 
 <script>
 export default {
-  name: 'PageFooter'
+  name: 'PageFooter',
+  computed: {
+    currentYear() {
+      return new Date().getFullYear()
+    }
+  }
 }
 </script>
 
