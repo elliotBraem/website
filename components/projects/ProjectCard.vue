@@ -13,13 +13,15 @@
         b-col
           h3 {{project.attributes.title}}
         b-col
-          h3.github
-            a(:href="project.attributes.url" target="_blank")
-              font-awesome-icon(:icon="['fab', 'github']")
+          Icon.github(:type="'github'" :href='project.attributes.url')
 </template>
 
 <script>
+import Icon from '~/components/common/Icon'
 export default {
+  components: {
+    Icon
+  },
   props: {
     project: {
       type: Object,
