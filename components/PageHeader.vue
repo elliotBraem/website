@@ -4,8 +4,6 @@
       b-navbar-brand
         nuxt-link(to="/")
           b-img.logo(src="/logo.svg")
-      h4
-        ContactList.contact-list
 </template>
 
 <script>
@@ -19,20 +17,14 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-  .logo
-    min-width: 4rem
+<style scoped>
+.logo {
+  min-width: 4rem;
+}
 
-  .wrapper
-    min-height: 10rem
-    max-width: 1024px
-    margin: auto
-
-  // /* Medium Devices, Desktops */
-  // @media only screen and (min-width : 992px)
-  //   .navbar
-  //     position: fixed;
-  //     top: 0;
-  //     width: 100%;
-
+.wrapper {
+  min-height: 10rem;
+  max-width: 1024px;
+  margin: auto;
+}
 </style>

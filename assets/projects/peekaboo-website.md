@@ -1,7 +1,7 @@
 ---
 id: peekaboo-website
 url: https://github.com/elliotBraem/peekaboo-website
-title: Peek-A-Boo Website
+title: peekabootherapy.com
 img: /peekaboo-website.svg
 year: 2018
 color: fff
