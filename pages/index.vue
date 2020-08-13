@@ -1,44 +1,38 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        brae.me
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <section class="section">
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="column">
+          <ProfilePicture />
+        </div>
+        <div class="column">
+          <Bio />
+        </div>
+      </div>
+      <div>
+        <Projects />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-export default {}
+import ProfilePicture from '~/components/ProfilePicture'
+import Bio from '~/components/Bio'
+import Projects from '~/components/Projects'
+
+export default {
+  components: {
+    ProfilePicture,
+    Bio,
+    Projects
+  }
+}
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  /* justify-content: center; */
 }
 
 .title {
