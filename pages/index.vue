@@ -10,31 +10,31 @@
         </div>
       </div>
       <div>
-        <Projects />
+        <ProjectList :projects="projects ? projects : []" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import projects from '~/static/projects.json'
 import ProfilePicture from '~/components/ProfilePicture'
 import Bio from '~/components/Bio'
-import Projects from '~/components/Projects'
+import ProjectList from '~/components/projects/ProjectList'
 
 export default {
   components: {
     ProfilePicture,
     Bio,
-    Projects
+    ProjectList
+  },
+  asyncData ({ params }) {
+    return { projects }
   }
 }
 </script>
 
 <style>
-.container {
-  /* justify-content: center; */
-}
-
 .title {
   font-family:
     'Quicksand',

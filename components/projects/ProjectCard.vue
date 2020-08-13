@@ -9,10 +9,10 @@
         </div>
         <div class="media-content">
           <p class="title is-4">
-            CupSave
+            {{ project.title }}
           </p>
           <p class="subtitle is-6">
-            {{ project }}
+            {{ project ? project.title : "" }}
           </p>
         </div>
       </div>
