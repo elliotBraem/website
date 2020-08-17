@@ -1,12 +1,13 @@
 <template>
-  <figure class="image is-square">
-    <img src="https://bulma.io/images/placeholders/128x128.png">
-  </figure>
+  <div class="box">
+    <figure class="image is-square profile-img">
+      <img src="~/assets/profile.jpeg">
+    </figure>
+  </div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style>
-</style>
+<style />

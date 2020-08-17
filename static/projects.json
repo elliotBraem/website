@@ -3,8 +3,10 @@
     "id": "cupsave",
     "url": "https://github.com/elliotBraem/CupSave",
     "title": "CupSave",
-    "img": "/cupsave.svg",
+    "img": "/cupsave.png",
     "year": "2019",
-    "color": "79DB85"
+    "color": "79DB85",
+    "description": "An application that tracks a user’s ecological footprint of disposable coffee cups saved by purchasing drinks with a personal mug. \nCupSave lists participating cafes in a map format, lets users log in with different devices, and scan café-specific QR codes when purchasing their drinks. Using this data, statistics are compiled on the profile screen to represent the user's saved footprint.",
+    "tags": "React Native, Google Firebase"
   }
 ]

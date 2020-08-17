@@ -1,11 +1,13 @@
 <template>
-  <section class="section">
-    <div class="container is-fluid">
-      <div class="columns">
-        <div class="column">
+  <section class="section mt-6">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-one-quarter">
           <ProfilePicture />
         </div>
-        <div class="column">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-one-half">
           <Bio />
         </div>
       </div>
