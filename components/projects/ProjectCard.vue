@@ -16,13 +16,19 @@
       <div class="content">
         {{ project.description }}
         <br>
+        <Fab :i="github" :link="project.url" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Fab from '~/components/common/Fab'
+
 export default {
+  components: {
+    Fab
+  },
   props: {
     project: {
       type: Object,
