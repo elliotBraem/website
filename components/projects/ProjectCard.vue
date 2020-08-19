@@ -16,18 +16,18 @@
       <div class="content">
         {{ project.description }}
         <br>
-        <Fab :i="github" :link="project.url" />
+        <ProjectIcons :project="project" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Fab from '~/components/common/Fab'
+import ProjectIcons from '~/components/projects/ProjectIcons'
 
 export default {
   components: {
-    Fab
+    ProjectIcons
   },
   props: {
     project: {

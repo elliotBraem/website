@@ -8,5 +8,45 @@
     "color": "79DB85",
     "description": "An application that tracks a user’s ecological footprint of disposable coffee cups saved by purchasing drinks with a personal mug. \nCupSave lists participating cafes in a map format, lets users log in with different devices, and scan café-specific QR codes when purchasing their drinks. Using this data, statistics are compiled on the profile screen to represent the user's saved footprint.",
     "tags": "React Native, Redux, Firebase, Expo, Jest"
+  },
+  {
+    "id": "all-eyes",
+    "url": "https://github.com/elliotBraem/all-eyes",
+    "title": "All Eyes",
+    "img": "/all-eyes.svg",
+    "year": "2018",
+    "color": "01BAEF",
+    "description": "A python application able to detect and replace closed eyes in an image. Using face and closed eye detection, local images, and in-painting, All Eyes is able to achieve a natural replacement for closed eyes in an otherwise ruined picture.",
+    "tags": "Python, OpenCV"
+  },
+  {
+    "id": "peekaboo-website",
+    "url": "https://github.com/elliotBraem/peekaboo-website",
+    "title": "peekabootherapy.com",
+    "img": "/peekaboo-website.svg",
+    "year": "2018",
+    "color": "FFF",
+    "description": "A website I designed, developed, and deployed for Peek-A-Boo Pediatric Therapy to better represent the company’s mission and provide a significantly better user experience.",
+    "tags": "Vue.js, Nuxt.js, Bootstrap"
+  },
+  {
+    "id": "braeme",
+    "url": "https://github.com/elliotBraem/brae.me",
+    "title": "brae.me",
+    "img": "/braeme.svg",
+    "year": "2018",
+    "color": "F5F5F5",
+    "description": "This website, created as a portfolio for myself.",
+    "tags": "Vue.js, Nuxt.js, Bulma"
+  },
+  {
+    "id": "psychic",
+    "url": "https://github.com/HarrisJT/predict",
+    "title": "Psychic",
+    "img": "/psychic.svg",
+    "year": "2018",
+    "color": "FFD9DA",
+    "description": "A collaborative forecasting website that gathers and utilizes data science techniques to optimize predictions over time.",
+    "tags": "Java, Firebase"
   }
 ]
