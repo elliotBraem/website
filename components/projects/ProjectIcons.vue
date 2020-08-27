@@ -2,7 +2,7 @@
   <div class="level mt-3">
     <div class="level-left">
       <div class="level-item">
-        <Fab :i="github" :link="project.url" />
+        <Fab :i="'github'" :link="project.url" />
       </div>
     </div>
   </div>
